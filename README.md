@@ -30,4 +30,9 @@
         // Je lie les candidatures à l'annonce
         $application1->setAdvert($advert);
         $application2->setAdvert($advert);
+        
+        $em->persist($advert);
+
+        $em->persist($application1);
+        $em->persist($application2);
 ```
