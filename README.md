@@ -36,3 +36,22 @@
         $em->persist($application1);
         $em->persist($application2);
 ```
+
+- CLI
+
+```bash
+#Create BDD 
+php app/console doctrine:database:create
+
+#Générer une entité 
+php app/console doctrine:generate:entity
+
+#Générer une requêtes
+php app/console doctrine:schema:update --dump-sql
+
+#Executer une requête
+php app/console doctrine:schema:update --force
+
+#Générer Getter/Setter sur une entité
+php app/console doctrine:generate:entities {PlatformBundle:Advert}
+```
